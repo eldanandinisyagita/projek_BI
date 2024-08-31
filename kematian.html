@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kematian
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css">
+
+        <link rel="stylesheet" href="css/aos.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/nicepage.css" media="screen">
+        <link rel="stylesheet" href="css/Page-2.css" media="screen">
+        <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+        <meta name="generator" content="Nicepage 5.2.4, nicepage.com">
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+        <style>
+            #container {
+                height: 450px;
+                width: 700px;
+            }
+
+            .highcharts-figure,
+            .highcharts-data-table table {
+                min-width: 310px;
+                max-width: 800px;
+                margin: 1em auto;
+            }
+
+            .highcharts-data-table table {
+                font-family: Verdana, sans-serif;
+                border-collapse: collapse;
+                border: 1px solid #ebebeb;
+                margin: 10px auto;
+                text-align: center;
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .highcharts-data-table caption {
+                padding: 1em 0;
+                font-size: 1.2em;
+                color: #555;
+            }
+
+            .highcharts-data-table th {
+                font-weight: 600;
+                padding: 0.5em;
+            }
+
+            .highcharts-data-table td,
+            .highcharts-data-table th,
+            .highcharts-data-table caption {
+                padding: 0.5em;
+            }
+
+            .highcharts-data-table thead tr,
+            .highcharts-data-table tr:nth-child(even) {
+                background: #f8f8f8;
+            }
+
+            .highcharts-data-table tr:hover {
+                background: #f1f7ff;
+            }
+        </style>
+
+    </head>
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+        
+        <div class="site-wrap" >
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close mt-3">
+                        <span class="icon-close2 js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+            <header class="site-navbar light js-sticky-header site-navbar-target" role="banner" >
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-xl-2">
+                            <div class="mb-0 site-logo"><a href="index.html" class="mb-0">Covid<span class="text-primary">.</span> </a></div>
+                        </div>
+                        <div class="col-12 col-md-10 d-none d-xl-block">
+                            <nav class="site-navigation position-relative text-right" role="navigation">
+                                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                    <li><a href="index.html" class="nav-link">Home</a></li>
+                                    <li><a href="populasi.html" class="nav-link">Populasi</a></li>
+                                    <li><a href="kasus.html" class="nav-link">Kasus</a></li>
+                                    <li class="active"><a href="kematian.html" class="nav-link">Kematian</a></li>
+                                    <li><a href="sembuh.html" class="nav-link">Sembuh</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="u-clearfix u-section-1" id="sec-436d" style="padding: 50px;">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                  <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+                    <div class="u-layout">
+                      <div class="u-layout-col">
+                        <div class="u-size-30">
+                          <div class="u-layout-row">
+                            <div>
+                                <script src="https://code.highcharts.com/highcharts.js"></script>
+                                <script src="https://code.highcharts.com/modules/series-label.js"></script>
+                                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                                <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+                                <figure class="highcharts-figure">
+                                    <div id="container"></div>
+                                    <p class="highcharts-description">                                        
+                                    </p>
+                                </figure>
+
+                                <script>
+                                    Highcharts.chart('container', {
+                                        chart: {
+                                            type: 'spline'
+                                        },
+                                        title: {
+                                            text: 'Total Kematian Akibat Covid-19 Tahun 2021 di Pulau Sumatra'
+                                        },
+
+                                        xAxis: {
+                                            categories: ['Jan','Feb','Mar', 'Apr', 'May', 'Jun',
+                                                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                                            accessibility: {
+                                                description: 'Months of the year'
+                                            }
+                                        },
+                                        yAxis: {
+                                            title: {
+                                                text: 'Total Kematian'
+                                            },
+                                            labels: {
+                                                formatter: function () {
+                                                    return this.value;
+                                                }
+                                            }
+                                        },
+                                        tooltip: {
+                                            crosshairs: true,
+                                            shared: true
+                                        },
+                                        plotOptions: {
+                                            spline: {
+                                                marker: {
+                                                    radius: 4,
+                                                    lineColor: '#666666',
+                                                    lineWidth: 1
+                                                }
+                                            }
+                                        },
+                                        series: [{
+                                            name: 'Riau',
+                                            marker: {
+                                                symbol: 'circle'
+                                            },
+                                            data: [19749, 20310, 24961, 28531, 41329, 53445, 67758, 100004, 118400, 123221, 126618, 127484]
+
+                                        }, {
+                                            name: 'Sumatra Selatan',
+                                            marker: {
+                                                symbol: 'circle'
+                                            },
+                                            data: [19749, 20043, 24444, 27166, 34487, 40220, 52323, 79550, 89808, 92112, 94866, 95365]
+                                        }, {
+                                            name: 'Sumatra Utara',
+                                            marker: {
+                                                symbol: 'circle'
+                                            },
+                                            data: [22025, 22054, 27268, 28271, 31292, 33651, 40506, 60047, 79994, 86659, 88888, 89606]
+                                        }, {
+                                            name: 'Sumatra Barat',
+                                            marker: {
+                                                symbol: 'circle'
+                                            },
+                                            data: [17484, 17631, 20693, 22077, 27710, 32827, 41097, 55351, 62088, 64507, 66269, 66714]
+                                        }, {
+                                            name: 'Aceh',
+                                            marker: {
+                                                symbol: 'circle'
+                                            },
+                                            data: [11491, 10670, 12062, 12333, 15670, 20843, 27775, 37207, 51968, 61921, 62554, 64046]
+                                        }
+                                        ]
+                                    });
+                                </script>
+                            </div>
+                            <div class="u-container-style u-layout-cell u-right-cell u-size-25 u-layout-cell-2">
+                              <div class="u-container-layout u-container-layout-2">
+                                <h2 class="u-align-left u-text u-text-1" style="color: #990000;" >Data Total Kematian Akibat Covid-19 Di pulau Sumatra Tahun 2021</h2>
+                                <h3 class="u-align-justify u-text u-text-2"> Dari data disamping ada beberapa hal yang dapat kita ambil, diantaranya adalah:</h3>
+                                <br>
+                                <div class="u-container-style u-expanded-width u-group u-palette-1-base u-radius-10 u-shape-round u-group-1" style="background: rgba(193, 66, 66, 0.05);"  >
+                                  <div class="u-container-layout u-container-layout-3">
+                                    <ul class="u-align-left u-text u-text-3" style="color: black; text-align: justify;"  >
+                                      <li> Desember merupakan periode tertinggi dengan total kematian tertinggi akibat Covid</li>
+                                      <li> Selain sebagai Provinsi sebagai total kasus dan kesembuhan tertinggi, provinsi Riau juga merupakan daerah dengan total kematian tertinggi</li>
+                                      <li> Aceh merupakan provinsi dengan total kesembuhan dan kematian terendah di Pulau Sumatra</li>
+                                    <br>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="u-size-30">
+                          <div class="u-layout-row">
+                            <div class="u-align-justify u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-3">
+                              <div class="u-container-layout u-valign-top u-container-layout-4">
+                                <p class="u-text u-text-4"> Berdasarkan grafik di atas dapat dilihat bahwa total kematian akibat covid terjadi lonjakan kenaikan semenjak bulan Agustus, dan terus naik hingga puncaknya di bulan desember untuk setiap Provinsi di Pulau Sumatra. Tren kenaikan total kematian ini dikarenakan, sejak bulan agustus pada tahun 2021, dimana Indonesia telah melakukan lockdown total selama setengah tahun. Lalu di bulan agustus Indonesia menerapkan New Normal dimana gaya hidup masyrakat diarahkan untuk berdampingan dengan Covid. <br>
+                                  <br>Salah satunya adalah dengan melakukan kegiatan semi online untuk jadwal akademik. Dimana jadwal masuk kegiatan proses belajar mengajar dihadiri setengah dari total jumlah kelas. Pada kegiatan perkantoran, beberapa staff pekerja juga sudah dapat beraktifitas di kantor dengan menerapkan protokol kesehatan. Namun dikarenakan hal ini, kasus covid mulai meningkat dan terpapar terhadap masyarakat yang rentan sehingga total kematian meningkat.<br>
+                                  <br>Kemudian pada bulan desember puncak total kematian akibat covid terjadi karena pada akhir tahun ini masyarakat mulai melakukan perjalanan mudik antar daerah sehingga penyebaran kasus covid semakin naik dan beresiko pada kematian. Untuk itu pada bulan desember, tercatatat total kematian tertinggi sepanjang tahun 2021.<br>
+                                  <br>Seharusnya untuk menekan angka kematian akibat pandemi, pemerintah dan masyarakat tetap melakukan social distanding dengan lockdown sampai kasus covid selesai. Sehingga resiko untuk terjadinya penularan beresiko berkurang dan dapat menekan angka kematian.<br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
